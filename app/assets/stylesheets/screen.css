@@ -9,7 +9,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     font-style:inherit;
     font-size:100%;
     font-family:inherit;
-    vertical-align:baseline}body{line-height:1;
+    vertical-align:baseline
+}
+
+body{
+    line-height:1;
     color:black;
     background:white
 }
@@ -73,14 +77,8 @@ a img{
 }
 
 html{
-    background:#d3dd8a;
-    -moz-background-size:80px 80px;
-    -webkit-background-size:80px 80px;
-    -o-background-size:80px 80px;
-    background-size:80px 80px;
-    background-image:-webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(25%, rgba(255,255,255,0.1)), color-stop(25%, rgba(255,255,255,0)), color-stop(50%, rgba(255,255,255,0)), color-stop(50%, rgba(255,255,255,0.1)), color-stop(75%, rgba(255,255,255,0.1)), color-stop(75%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
-    background-image:-moz-linear-gradient(left top, rgba(255,255,255,0.1) 25%,rgba(255,255,255,0) 25%,rgba(255,255,255,0) 50%,rgba(255,255,255,0.1) 50%,rgba(255,255,255,0.1) 75%,rgba(255,255,255,0) 75%,rgba(255,255,255,0));
-    background-image:linear-gradient(left top, rgba(255,255,255,0.1) 25%,rgba(255,255,255,0) 25%,rgba(255,255,255,0) 50%,rgba(255,255,255,0.1) 50%,rgba(255,255,255,0.1) 75%,rgba(255,255,255,0) 75%,rgba(255,255,255,0))
+    
+    background-image: radial-gradient(rgb(194, 227, 255), rgb(83, 121, 164))
 }
 
 body{
@@ -113,7 +111,7 @@ body{
     background-clip:padding-box
 }
 
-body:before{
+#body:before{
     content:" ";
     z-index:-2;
     position:absolute;
