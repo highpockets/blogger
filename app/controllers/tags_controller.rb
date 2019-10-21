@@ -1,5 +1,6 @@
 class TagsController < ApplicationController
-   
+    before_action :require_login, only: [:destroy]
+
     def index
         @tags = Tag.all
     end
@@ -8,6 +9,7 @@ class TagsController < ApplicationController
         @tag = Tag.find(params[:id])
     end
 
+   
     def destroy
         @tag = Tag.destroy(params[:id])
 
